@@ -1,13 +1,12 @@
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 import '../App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Welcome to React Calculator!</p>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <>
+    <Display />
+    <ButtonPanel />
+  </>
+);
 
 export default App;
