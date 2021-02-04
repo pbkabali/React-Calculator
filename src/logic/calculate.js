@@ -1,3 +1,4 @@
+import Big from 'big.js';
 import operate from './operate';
 
 const calculate = (calculatorData, buttonName) => {
@@ -20,7 +21,7 @@ const calculate = (calculatorData, buttonName) => {
           if (next === null) {
             break;
           } else {
-            total = next;
+            total = Big(next).toString();
           }
         } else if (total === null && next === null && buttonName !== '=') {
           total = 0;
@@ -46,6 +47,7 @@ const calculate = (calculatorData, buttonName) => {
         break;
       default:
         next = next === null ? buttonName : next + buttonName;
+        next = Big(next).toString();
     }
   }
 
