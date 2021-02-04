@@ -43,7 +43,6 @@ const calculate = (calculatorData, buttonName) => {
         break;
       default:
         next = next === null ? buttonName : next + buttonName;
-        next = Big(next).toString();
     }
   }
 
