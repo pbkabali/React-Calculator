@@ -12,17 +12,21 @@ class App extends Component {
       next: null,
       operation: null,
     };
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
-    this.setState((prevState) => calculate(prevState, buttonName));
+    this.setState(prevState => calculate(prevState, buttonName));
   }
 
   render() {
+    const { total, next } = this.state;
+
     return (
       <>
         <Display result={next === null ? total : next} />
-        <ButtonPanel clickHandler={this.handleClick.bind(this)} />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }
