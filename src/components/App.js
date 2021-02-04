@@ -8,7 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      total: null,
+      total: '1234',
       next: null,
       operation: null,
     };
@@ -17,6 +17,8 @@ class App extends Component {
   }
 
   handleClick(buttonName) {
+    const { total, next, operation } = this.state;
+    console.log(total, next, operation);
     this.setState(prevState => calculate(prevState, buttonName));
   }
 

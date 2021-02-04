@@ -4,8 +4,8 @@ const calculate = (calculatorData, buttonName) => {
   let { total, next, operation } = calculatorData;
   switch (buttonName) {
     case 'AC':
-      total = '';
-      next = '';
+      total = null;
+      next = null;
       operation = null;
       break;
     case '+':
@@ -14,14 +14,14 @@ const calculate = (calculatorData, buttonName) => {
     case '/':
     case '=':
       if (operation === null && buttonName === '=') {
-        if (next === '') {
+        if (next === null) {
           break;
         } else {
           total = next;
         }
-      } else if (total === '') {
+      } else if (total === null) {
         total = next;
-      } else if (next !== '') {
+      } else if (next !== null) {
         total = operate(total, next, operation);
       }
       if (buttonName === '=') {
@@ -29,18 +29,18 @@ const calculate = (calculatorData, buttonName) => {
       } else {
         operation = buttonName;
       }
-      next = '';
+      next = null;
       break;
     case '+/-':
     case '%':
-      if (next !== '') {
+      if (next !== null) {
         next = operate(next, 0, buttonName);
-      } else if (total !== '') {
+      } else if (total !== null) {
         total = operate(total, 0, buttonName);
       }
       break;
     default:
-      next += buttonName;
+      next = next === null ? buttonName : next + buttonName;
   }
   return { total, next, operation };
 };
