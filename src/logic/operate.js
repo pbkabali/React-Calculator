@@ -17,7 +17,7 @@ const operate = (numberOne, numberTwo, operation) => {
       break;
 
     case '/':
-      result = x.div(y);
+      result = numberTwo === '0' ? 'Error' : x.div(y);
       break;
 
     case '%':
