@@ -1,35 +1,35 @@
-import Big from "big.js";
+import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
   let result = Big(0);
   const [x, y] = [Big(numberOne), Big(numberTwo)];
   switch (operation) {
-    case "+":
+    case '+':
       result = x.plus(y);
       break;
 
-    case "-":
+    case '-':
       result = x.minus(y);
       break;
 
-    case "X":
+    case 'X':
       result = x.times(y);
       break;
 
-    case "/":
+    case '/':
       result = x.div(y);
       break;
 
-    case "%":
+    case '%':
       result = x.div(100);
       break;
 
-    case "+/-":
+    case '+/-':
       result = x.times(-1);
       break;
 
     default:
-      result = x
+      result = x;
       break;
   }
   return result.toString();

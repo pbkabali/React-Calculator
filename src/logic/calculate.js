@@ -13,15 +13,15 @@ const calculate = (calculatorData, buttonName) => {
     case 'X':
     case '/':
     case '=':
-      if(operation === null && buttonName === '='){
-        if(next === ''){
-          break
-        }else{
-          total = next
+      if (operation === null && buttonName === '=') {
+        if (next === '') {
+          break;
+        } else {
+          total = next;
         }
-      }else if(total === ''){
-        total = next
-      }else if(next != ''){
+      } else if (total === '') {
+        total = next;
+      } else if (next !== '') {
         total = operate(total, next, operation);
       }
       if (buttonName === '=') {
@@ -33,9 +33,9 @@ const calculate = (calculatorData, buttonName) => {
       break;
     case '+/-':
     case '%':
-      if (next != '') {
+      if (next !== '') {
         next = operate(next, 0, buttonName);
-      } else if(total != ''){
+      } else if (total !== '') {
         total = operate(total, 0, buttonName);
       }
       break;
