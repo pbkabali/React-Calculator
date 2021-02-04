@@ -27,7 +27,7 @@ class App extends Component {
 
     let result;
     if (total === null && next === null) {
-      result = 0;
+      result = '0';
     } else if (next === null) {
       result = total;
     } else {

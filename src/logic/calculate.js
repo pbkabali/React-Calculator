@@ -24,7 +24,7 @@ const calculate = (calculatorData, buttonName) => {
             total = Big(next).toString();
           }
         } else if (total === null && next === null && buttonName !== '=') {
-          total = 0;
+          total = '0';
         } else if (total === null) {
           total = next;
         } else if (next !== null) {
