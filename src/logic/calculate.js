@@ -17,12 +17,8 @@ const calculate = (calculatorData, buttonName) => {
       case 'X':
       case '/':
       case '=':
-        if (operation === null && buttonName === '=') {
-          if (next === null) {
-            break;
-          } else {
-            total = Big(next).toString();
-          }
+        if (operation === null && total != null && next != null) {
+          total = Big(next).toString();
         } else if (total === null && next === null && buttonName !== '=') {
           total = '0';
         } else if (total === null) {
