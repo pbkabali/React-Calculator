@@ -25,9 +25,18 @@ class App extends Component {
   render() {
     const { total, next } = this.state;
 
+    let result;
+    if (total === null && next === null) {
+      result = 0;
+    } else if (next === null) {
+      result = total;
+    } else {
+      result = next;
+    }
+
     return (
       <>
-        <Display result={next === null ? total : next} />
+        <Display result={result} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
