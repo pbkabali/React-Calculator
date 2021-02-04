@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unused-state */
+
 import { Component } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -17,8 +19,6 @@ class App extends Component {
   }
 
   handleClick(buttonName) {
-    const { total, next, operation } = this.state;
-    console.log(total, next, operation);
     this.setState(prevState => calculate(prevState, buttonName));
   }
 
@@ -43,3 +43,5 @@ class App extends Component {
   }
 }
 export default App;
+
+/* eslint-enable react/no-unused-state */
