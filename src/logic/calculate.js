@@ -11,11 +11,6 @@ const calculate = (calculatorData, buttonName) => {
     return { total, next, operation };
   } else {
     switch (buttonName) {
-      case 'AC':
-        total = null;
-        next = null;
-        operation = null;
-        break;
       case '+':
       case '-':
       case 'X':
@@ -27,6 +22,8 @@ const calculate = (calculatorData, buttonName) => {
           } else {
             total = next;
           }
+        } else if (total === null && next === null && buttonName !== '=') {
+          total = 0;
         } else if (total === null) {
           total = next;
         } else if (next !== null) {
