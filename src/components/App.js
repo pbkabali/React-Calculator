@@ -21,8 +21,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <Display result="12345" />
-        <ButtonPanel />
+        <Display result={next === null ? total : next} />
+        <ButtonPanel clickHandler={this.handleClick.bind(this)} />
       </>
     );
   }
