@@ -1,5 +1,19 @@
-/* eslint-disable react/no-unused-state */
+import { Route, Switch } from 'react-router-dom';
+import CalculatorPage from './CalculatorPage';
+import HomePage from './HomePage';
+import QuotePage from './QuotePage';
 
+const App = () => (
+  <main>
+    <Switch>
+      <Route path="/" component={HomePage} exact />
+      <Route path="/calculator" component={CalculatorPage} />
+      <Route path="/quote" component={QuotePage} />
+    </Switch>
+  </main>
+);
+
+<<<<<<< HEAD
 import { useState } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -35,6 +49,6 @@ const App = () => {
     </>
   );
 };
+=======
+>>>>>>> Configure pages and routing
 export default App;
-
-/* eslint-enable react/no-unused-state */
