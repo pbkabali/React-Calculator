@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Display = props => {
   const { result } = props;
-  return <div className="flex">{result}</div>;
+  return <div className="flex display">{result}</div>;
 };
 
 Display.propTypes = {
