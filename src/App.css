@@ -16,3 +16,9 @@
 .App-link {
   color: #61dafb;
 }
+
+.flex {
+  display: flex;
+  background-color: red;
+  width: 700px;
+}

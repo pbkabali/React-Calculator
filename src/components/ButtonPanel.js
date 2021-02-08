@@ -11,7 +11,7 @@ const ButtonPanel = props => {
   );
 
   return (
-    <div>
+    <div className="flex">
       <div>
         {makeButton('AC')}
         {makeButton('+/-')}
