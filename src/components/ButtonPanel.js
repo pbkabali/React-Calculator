@@ -11,32 +11,32 @@ const ButtonPanel = props => {
   );
 
   return (
-    <div className="flex">
-      <div>
+    <div>
+      <div className="flex">
         {makeButton('AC')}
         {makeButton('+/-')}
         {makeButton('%')}
         {makeButton('/')}
       </div>
-      <div>
+      <div className="flex">
         {makeButton('7')}
         {makeButton('8')}
         {makeButton('9')}
-        {makeButton('X')}
+        {makeButton('x')}
       </div>
-      <div>
+      <div className="flex">
         {makeButton('4')}
         {makeButton('5')}
         {makeButton('6')}
         {makeButton('-')}
       </div>
-      <div>
+      <div className="flex">
         {makeButton('1')}
         {makeButton('2')}
         {makeButton('3')}
         {makeButton('+')}
       </div>
-      <div>
+      <div className="flex">
         {makeButton('0')}
         {makeButton('.')}
         {makeButton('=')}

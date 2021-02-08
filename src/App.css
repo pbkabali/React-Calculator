@@ -28,11 +28,19 @@
   color: white;
   font-weight: bold;
   padding: 5px;
-  font-size: 100px;
+  font-size: 90px;
   align-items: center;
   justify-content: flex-end;
 }
 
 .btn-normal {
   height: 100px;
+  width: 25%;
+  border-radius: 0;
+  font-size: 40px;
+  outline: none;
+}
+
+.btn-wide {
+  width: 50%;
 }
