@@ -6,8 +6,8 @@ const ButtonPanel = props => {
 
   const handleClick = buttonName => clickHandler(buttonName);
 
-  const makeButton = name => (
-    <Button name={name} clickHandler={() => handleClick(name)} />
+  const makeButton = (name, wide = false) => (
+    <Button name={name} wide={wide} clickHandler={() => handleClick(name)} />
   );
 
   return (
@@ -37,7 +37,7 @@ const ButtonPanel = props => {
         {makeButton('+')}
       </div>
       <div className="flex">
-        {makeButton('0')}
+        {makeButton('0', true)}
         {makeButton('.')}
         {makeButton('=')}
       </div>
