@@ -39,3 +39,7 @@
   font-size: 40px;
   outline: none;
 }
+
+.btn-normal:active {
+  transform: scale(0.98);
+}
