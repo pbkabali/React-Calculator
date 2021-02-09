@@ -19,6 +19,10 @@
 
 .flex {
   display: flex;
+  align-items: center;
+}
+
+.calculator {
   width: 700px;
 }
 
@@ -42,4 +46,24 @@
 
 .btn-normal:active {
   transform: scale(0.98);
+}
+
+.header {
+  justify-content: space-between;
+  background-color: #282c34;
+  color: antiquewhite;
+  border-bottom: 1px solid white;
+}
+
+.side-padding {
+  padding: 5px 20px 5px 20px;
+}
+
+.nav {
+  width: 30%;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: antiquewhite;
 }
