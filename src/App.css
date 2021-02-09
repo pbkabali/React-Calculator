@@ -73,3 +73,13 @@
   line-height: 2;
   font-size: 1.5em;
 }
+
+.calc-container {
+  align-items: flex-start;
+  padding-top: 60px;
+  font-size: 4em;
+}
+
+.calc-container h2 {
+  margin-top: 0;
+}
