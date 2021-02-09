@@ -67,3 +67,9 @@
 .nav-link {
   color: antiquewhite;
 }
+
+.home-container {
+  padding-right: 40%;
+  line-height: 2;
+  font-size: 1.5em;
+}
