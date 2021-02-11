@@ -1,5 +1,4 @@
 import renderer from 'react-test-renderer';
-
 import QuotePage from '../QuotePage';
 
 describe('QuotePage', () => {

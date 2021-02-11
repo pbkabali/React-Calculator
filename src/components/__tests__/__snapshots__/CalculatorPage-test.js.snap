@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CalculatorPage renders correctly 1`] = `
+exports[`CalculatorPage Renders correctly 1`] = `
 <div
   className="flex side-padding calc-container"
 >
