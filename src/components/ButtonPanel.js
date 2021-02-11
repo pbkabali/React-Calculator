@@ -6,38 +6,38 @@ const ButtonPanel = props => {
 
   const handleClick = buttonName => clickHandler(buttonName);
 
-  const makeButton = name => (
-    <Button name={name} clickHandler={() => handleClick(name)} />
+  const makeButton = (name, wide = false) => (
+    <Button name={name} wide={wide} clickHandler={() => handleClick(name)} />
   );
 
   return (
     <div>
-      <div>
+      <div className="flex calculator">
         {makeButton('AC')}
         {makeButton('+/-')}
         {makeButton('%')}
         {makeButton('/')}
       </div>
-      <div>
+      <div className="flex calculator">
         {makeButton('7')}
         {makeButton('8')}
         {makeButton('9')}
-        {makeButton('X')}
+        {makeButton('x')}
       </div>
-      <div>
+      <div className="flex calculator">
         {makeButton('4')}
         {makeButton('5')}
         {makeButton('6')}
         {makeButton('-')}
       </div>
-      <div>
+      <div className="flex calculator">
         {makeButton('1')}
         {makeButton('2')}
         {makeButton('3')}
         {makeButton('+')}
       </div>
-      <div>
-        {makeButton('0')}
+      <div className="flex calculator">
+        {makeButton('0', true)}
         {makeButton('.')}
         {makeButton('=')}
       </div>

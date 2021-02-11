@@ -16,3 +16,70 @@
 .App-link {
   color: #61dafb;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.calculator {
+  width: 700px;
+}
+
+.display {
+  height: 100px;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 90px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn-normal {
+  height: 100px;
+  border-radius: 0;
+  font-size: 40px;
+  outline: none;
+}
+
+.btn-normal:active {
+  transform: scale(0.98);
+}
+
+.header {
+  justify-content: space-between;
+  background-color: #282c34;
+  color: antiquewhite;
+  border-bottom: 1px solid white;
+}
+
+.side-padding {
+  padding: 5px 20px 5px 20px;
+}
+
+.nav {
+  width: 30%;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: antiquewhite;
+}
+
+.home-container {
+  padding-right: 40%;
+  line-height: 2;
+  font-size: 1.5em;
+}
+
+.calc-container {
+  align-items: flex-start;
+  padding-top: 60px;
+  font-size: 4em;
+}
+
+.calc-container h2 {
+  margin-top: 0;
+}

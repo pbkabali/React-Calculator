@@ -14,7 +14,7 @@ const calculate = (calculatorData, buttonName) => {
     switch (buttonName) {
       case '+':
       case '-':
-      case 'X':
+      case 'x':
       case '/':
       case '=':
         if (operation === null && total != null && next != null) {

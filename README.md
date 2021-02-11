@@ -2,17 +2,17 @@
 
 # React Calculator
 
-> One paragraph statement about the project.
+> A multi-page application built with ReactJS.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+This application has been built to have three different pages with one of them housing the calculator component. Routing in the browser is achieved using the react-router.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Javascript, JSX, CSS,
+- ReactJS,
+- Big.js
 
 ## Live Demo
 
@@ -20,42 +20,41 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running in development mode, follow these simple steps.
 
 ### Prerequisites
 
+- Node.js
+- Browser
+- Terminal
+
 ### Setup
+
+Clone the project from [here](https://github.com/pbkabali/React-Calculator)
 
 ### Install
 
+Run `npm install` to get all the dependencies.
+
+Run `npm start` to start the web-server.
+
 ### Usage
 
-### Run tests
+Go to `https://localhost:3000` in your browser.
 
-### Deployment
+## Author
 
-## Authors
+👤 **Paul Balitema Kabali**
 
-👤 **Author1**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@pbkabali](https://github.com/pbkabali)
+- Twitter: [@pbkabali](https://twitter.com/pbkabali)
+- Linkedin: [engineerbpk](https://linkedin.com/in/engineerbpk)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/pbkabali/React-Calculator/issues).
 
 ## Show your support
 
@@ -63,10 +62,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse Team 140 (The Cupids)
+- [The Odin Project](https://opengameart.org/)
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.

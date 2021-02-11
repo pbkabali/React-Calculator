@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Display = props => {
   const { result } = props;
-  return <div>{result}</div>;
+  return <div className="flex calculator display">{result}</div>;
 };
 
 Display.propTypes = {
